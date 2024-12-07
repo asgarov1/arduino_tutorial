@@ -12,20 +12,21 @@ void setup() {
 }
 
 void loop() {
-  for(int i=0; i<5; i++) {
-    lightUp(RED_PIN);
+  for(int i=0; i<3; i++) {
+    lightUp(RED_PIN,  200);
   }
-  for(int i=0; i<10; i++) {
-    lightUp(GREEN_PIN);
+  for(int i=0; i<3; i++) {
+    lightUp(RED_PIN, 600);
   }
-  for(int i=0; i<20; i++) {
-    lightUp(BLUE_PIN);
+  for(int i=0; i<3; i++) {
+    lightUp(RED_PIN,  200);
   }
+  delay(1000);
 }
 
-void lightUp(uint8_t pin) {
+void lightUp(int pin, int duration) {
   digitalWrite(pin, HIGH);
-  delay(100);
+  delay(duration);
   digitalWrite(pin, LOW);
-  delay(100);
+  delay(duration);
 }
