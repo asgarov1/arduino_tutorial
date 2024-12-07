@@ -12,14 +12,14 @@ void setup() {
 }
 
 void loop() {
-  for(int i=0; i<3; i++) {
-    lightUp(RED_PIN,  200);
+  for(int i=0; i<5; i++) {
+    lightUp(RED_PIN,  100);
   }
-  for(int i=0; i<3; i++) {
-    lightUp(RED_PIN, 600);
+  for(int i=0; i<10; i++) {
+    lightUp(GREEN_PIN, 500);
   }
-  for(int i=0; i<3; i++) {
-    lightUp(RED_PIN,  200);
+  for(int i=0; i<15; i++) {
+    lightUp(BLUE_PIN, 1000);
   }
   delay(1000);
 }
